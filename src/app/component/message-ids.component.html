@@ -1,0 +1,25 @@
+<div class="container">
+
+  <div class="row justify-content-md-center">
+    <div class="col-md-12 align-self-center">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>date</th>
+            <th>time</th>
+            <th>header</th>
+            <th>payload</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let message of messages.slice().reverse()">
+            <td>{{message.date}}</td>
+            <td>{{message.time}}</td>
+            <td>{{message.header}}</td>
+            <td>{{message.payload}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
